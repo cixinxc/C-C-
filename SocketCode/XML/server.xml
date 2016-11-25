@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<root>  
+    <monitor>  
+        <name>ftp</name>   <!--监控的程序名称-->  
+        <path>/usr/bin/</path>   <!--程序绝对路径-->  
+        <interval>30</interval>  <!--间隔多久监控一次-->  
+        <restartwait>30</restartwait>  <!--程序被重启后，等待多久再进行监控-->  
+        <ip>127.0.0.1</ip>   <!--程序IP-->  
+        <port>9878</port>    <!--程序端口-->  
+        <request>1;monitor</request>    <!--发送给程序的报文-->  
+        <response>The ftp is working ok.</response>   <!--程序给监控的反馈报文-->  
+        <log>  
+            <folderpath>log/</folderpath>  <!--程序日志保存目录-->  
+            <savedays>2</savedays>     <!--程序日志保存时间-->  
+        </log>  
+    </monitor>  
+</root>  
